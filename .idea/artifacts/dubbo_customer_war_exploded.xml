@@ -10,6 +10,7 @@
           <element id="archive" name="api-1.0-SNAPSHOT.jar">
             <element id="module-output" name="dubbo-api" />
           </element>
+          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.16.10" />
           <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.1.7.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.1.7.RELEASE" />
@@ -45,7 +46,6 @@
           <element id="library" level="project" name="Maven: org.apache.kafka:kafka-clients:0.9.0.1" />
           <element id="library" level="project" name="Maven: com.github.colin-lee:config-core:1.1.7" />
           <element id="library" level="project" name="Maven: org.aspectj:aspectjrt:1.8.7" />
-          <element id="library" level="project" name="Maven: org.projectlombok:lombok:1.16.10" />
           <element id="library" level="project" name="Maven: com.fxiaoke:fs-eye-j4log:1.0.1" />
           <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.8" />
           <element id="library" level="project" name="Maven: com.netflix.archaius:archaius-core:0.4.1" />

@@ -16,4 +16,5 @@
     <dubbo:consumer check="false" timeout="6000"/>
 
     <dubbo:reference version="1.0" id="xioazhiService" interface="com.xiaozhi.service.XiaozhiService" check="false"/>
+    <dubbo:reference version="1.0" id="userService" interface="com.xiaozhi.service.UserService" check="false"/>
 </beans>

@@ -12,4 +12,5 @@
     <dubbo:registry address="zookeeper://10.22.0.23:2181" check="false" />
     <!-- 要暴露的服务接口 -->
     <dubbo:service version="1.0" interface="com.xiaozhi.service.XiaozhiService" ref="xiaozhiServiceImp" />
+    <dubbo:service version="1.0" interface="com.xiaozhi.service.UserService" ref="userServiceImpl" />
 </beans>

@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gitignore
+.idea/workspace.xml
+dubbo-api/src/main/resources/
+dubbo-api/src/test/
+dubbo-api/target/
+dubbo-customer/target/
+dubbo-provider/target/

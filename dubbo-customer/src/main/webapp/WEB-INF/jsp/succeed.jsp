@@ -11,6 +11,7 @@
     <title>Title</title>
     <h1 align="center">DUBBO配置成功</h1>
     <h2 align="center">${msg}</h2>
+    <h2 align="center">${user.uid} ${user.uname}</h2>
 </head>
 <body>
 
