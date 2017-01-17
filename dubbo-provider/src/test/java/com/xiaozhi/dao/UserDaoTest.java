@@ -1,5 +1,6 @@
 package com.xiaozhi.dao;
 
+import com.xiaozhi.dao.MySqlDao.UserDao;
 import com.xiaozhi.model.UserDo;
 import org.junit.Test;
 import org.junit.runner.RunWith;

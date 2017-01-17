@@ -10,12 +10,12 @@
         http://www.springframework.org/schema/mvc
         http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd">
     <context:annotation-config/>
-    <context:component-scan base-package="com.xiaozhi.*"/>
+    <context:component-scan base-package="com.xiaozhi"/>
     <!-- 对静态资源文件的访问，交给default servlet handler处理 -->
     <mvc:default-servlet-handler/>
     <!-- 默认的注解映射的支持 -->
     <mvc:annotation-driven/>
-
+    <context:property-placeholder location="classpath:application.properties" />
     <!-- 第二种方式：加载多个properties文件
     <bean id="configProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
         <property name="locations">
@@ -34,5 +34,6 @@
     <!--加入其他配置文件-->
     <import resource="classpath:dubbo-provider.xml"/>
     <import resource="classpath:spring-mybatis.xml"/>
+    <import resource="classpath:spring-mongodb.xml"/>
 
 </beans>

@@ -1,12 +1,10 @@
 package com.xiaozhi.serviceImp;
 
-import com.xiaozhi.dao.UserDao;
+import com.xiaozhi.dao.MySqlDao.UserDao;
 import com.xiaozhi.model.User;
 import com.xiaozhi.model.UserDo;
 import com.xiaozhi.service.UserService;
 import com.xiaozhi.utils.BeanKit;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.ArrayList;

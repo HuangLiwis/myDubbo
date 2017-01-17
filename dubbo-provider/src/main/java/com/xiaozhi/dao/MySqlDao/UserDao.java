@@ -1,4 +1,4 @@
-package com.xiaozhi.dao;
+package com.xiaozhi.dao.MySqlDao;
 
 import com.xiaozhi.model.UserDo;
 import org.springframework.stereotype.Repository;
