@@ -21,7 +21,7 @@ public class StudentDaoImpl implements StudentDao {
     @Resource
     private Datastore datastore;
     SimpleDateFormat dateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-    public void addUser(StudentDo studentDo) {
+    public void addStudent(StudentDo studentDo) {
         if (studentDo != null) {
             studentDo.setCreateTime(dateFormat.format(new Date()));
             studentDo.setModifyTime(dateFormat.format(new Date()));
@@ -29,7 +29,7 @@ public class StudentDaoImpl implements StudentDao {
         }
     }
 
-    public void updateUser(StudentDo studentDo) {
+    public void updateStudent(StudentDo studentDo) {
         if (studentDo != null) {
             Query<StudentDo> oldClickEvent = datastore.createQuery(StudentDo.class)
                     .field("sid").equal(studentDo.getSid());
@@ -41,7 +41,7 @@ public class StudentDaoImpl implements StudentDao {
         }
     }
 
-    public List<StudentDo> findUser(StudentDo studentDo) {
+    public List<StudentDo> findStudent(StudentDo studentDo) {
         if (studentDo != null) {
             Query<StudentDo> query = datastore.createQuery(StudentDo.class);
             //query.criteria("sid").equal(studentDo.getSid());
@@ -54,7 +54,7 @@ public class StudentDaoImpl implements StudentDao {
 
     }
 
-    public void deleteUser(StudentDo studentDo) {
+    public void deleteStudent(StudentDo studentDo) {
         if(studentDo!=null){
             Query<StudentDo> query=datastore.createQuery(StudentDo.class);
             query.field("sid").equal(studentDo.getSid());

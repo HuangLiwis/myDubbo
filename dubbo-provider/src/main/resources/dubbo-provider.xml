@@ -13,4 +13,5 @@
     <!-- 要暴露的服务接口 -->
     <dubbo:service version="1.0" interface="com.xiaozhi.service.XiaozhiService" ref="xiaozhiServiceImp" />
     <dubbo:service version="1.0" interface="com.xiaozhi.service.UserService" ref="userServiceImpl" />
+    <dubbo:service version="1.0" interface="com.xiaozhi.service.StudentService" ref="studentServiceImpl"/>
 </beans>

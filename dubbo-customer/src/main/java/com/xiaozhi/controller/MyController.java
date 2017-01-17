@@ -1,6 +1,8 @@
 package com.xiaozhi.controller;
 
+import com.xiaozhi.model.Student;
 import com.xiaozhi.model.User;
+import com.xiaozhi.service.StudentService;
 import com.xiaozhi.service.UserService;
 import com.xiaozhi.service.XiaozhiService;
 import org.springframework.stereotype.Controller;
@@ -15,9 +17,13 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class MyController {
     @Resource
-    XiaozhiService xiaozhiService;
+    private XiaozhiService xiaozhiService;
     @Resource
-    UserService userService;
+    private UserService userService;
+    @Resource
+    private StudentService studentService;
+
+
     @RequestMapping("/test")
     public String mytest(HttpServletRequest request){
 
@@ -26,6 +32,11 @@ public class MyController {
         user.setUid(1);
         User userlist=userService.queryUser(user).get(0);
         request.getSession().setAttribute("user",userlist);
+
+        Student findStudent=new Student();
+        findStudent.setSid(1);
+        Student student=studentService.findStudent(findStudent).get(0);
+        request.getSession().setAttribute("student",student);
         return "succeed";
     }
 }

@@ -4,16 +4,18 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
+
 /**
- * Created by huangzh on 2017/1/13.
+ * Created by huangzh on 2017/1/17.
  */
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class UserVo {
-    private Integer uid;
-    private String uname;
-    private String upasseord;
+@NoArgsConstructor
+public class Student implements Serializable{
+    private Integer sid;
+    private String sname;
+    private String spassword;
     private String createTime;
     private String modifyTime;
 }

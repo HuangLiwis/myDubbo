@@ -10,8 +10,8 @@ import java.util.List;
  */
 @Service
 public interface StudentDao {
-    public void addUser(StudentDo studentDo);
-    public void updateUser(StudentDo studentDo);
-    public List<StudentDo> findUser(StudentDo studentDo);
-    public void deleteUser(StudentDo studentDo);
+    public void addStudent(StudentDo studentDo);
+    public void updateStudent(StudentDo studentDo);
+    public List<StudentDo> findStudent(StudentDo studentDo);
+    public void deleteStudent(StudentDo studentDo);
 }

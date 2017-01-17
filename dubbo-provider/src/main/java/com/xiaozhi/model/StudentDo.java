@@ -15,7 +15,7 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity(value = "student", noClassnameStored = true)
+@Entity(value = "student", noClassnameStored = true) //mongoDB以entity的值保存为一个集合
 public class StudentDo implements Serializable {
     @Id
     private ObjectId id;

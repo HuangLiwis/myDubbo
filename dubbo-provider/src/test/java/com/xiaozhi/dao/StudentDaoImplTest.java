@@ -42,47 +42,47 @@ public class StudentDaoImplTest {
 
     /**
     *
-    * Method: addUser(StudentDo studentDo)
+    * Method: addStudent(StudentDo studentDo)
     *
     */
     @Test
-    public void testAddUser() throws Exception {
-        studentDao.addUser(studentDo);
+    public void testAddStudent() throws Exception {
+        studentDao.addStudent(studentDo);
     }
 
     /**
     *
-    * Method: updateUser(StudentDo studentDo)
+    * Method: updateStudent(StudentDo studentDo)
     *
     */
     @Test
-    public void testUpdateUser() throws Exception {
-        studentDao.updateUser(studentDo);
+    public void testUpdateStudent() throws Exception {
+        studentDao.updateStudent(studentDo);
     }
 
     /**
     *
-    * Method: findUser(StudentDo studentDo)
+    * Method: findStudent(StudentDo studentDo)
     *
     */
     @Test
-    public void testFindUser() throws Exception {
+    public void testFindStudent() throws Exception {
         StudentDo studentDo=new StudentDo();
         studentDo.setSid(1);
-        List<StudentDo> list= studentDao.findUser(studentDo);
+        List<StudentDo> list= studentDao.findStudent(studentDo);
         System.out.print(list.get(0));
     }
 
     /**
     *
-    * Method: deleteUser(StudentDo studentDo)
+    * Method: deleteStudent(StudentDo studentDo)
     *
     */
     @Test
-    public void testDeleteUser() throws Exception {
+    public void testDeleteStudent() throws Exception {
         StudentDo studentDo=new StudentDo();
         studentDo.setSid(3);
-        studentDao.deleteUser(studentDo);
+        studentDao.deleteStudent(studentDo);
     }
 
 
