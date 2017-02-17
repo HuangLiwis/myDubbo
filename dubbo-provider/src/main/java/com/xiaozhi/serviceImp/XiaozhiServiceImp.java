@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
  */
 
 @Service("xiaozhiServiceImp")
-public class XiaozhiServiceImp implements XiaozhiService{
+public class XiaozhiServiceImp implements XiaozhiService {
     public String sayHello(String name) {
         System.out.println("HELLO");
         return name;

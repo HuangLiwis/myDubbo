@@ -25,18 +25,18 @@ public class MyController {
 
 
     @RequestMapping("/test")
-    public String mytest(HttpServletRequest request){
+    public String mytest(HttpServletRequest request) {
 
-        request.getSession().setAttribute("msg",xiaozhiService.sayHello("调用来自api的接口"));
-        User user=new User();
+        request.getSession().setAttribute("msg", xiaozhiService.sayHello("调用来自api的接口"));
+        User user = new User();
         user.setUid(1);
-        User userlist=userService.queryUser(user).get(0);
-        request.getSession().setAttribute("user",userlist);
+        User userlist = userService.queryUser(user).get(0);
+        request.getSession().setAttribute("user", userlist);
 
-        Student findStudent=new Student();
+        Student findStudent = new Student();
         findStudent.setSid(1);
-        Student student=studentService.findStudent(findStudent).get(0);
-        request.getSession().setAttribute("student",student);
+        Student student = studentService.findStudent(findStudent).get(0);
+        request.getSession().setAttribute("student", student);
         return "succeed";
     }
 }
